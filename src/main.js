@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import './styles/main.styl';
+import './main.styl';
+
+import MainView from './components/MainView';
 
 ReactDom.render(
   pug`
-    header
-      h1 Hello
     section
-      p Sample Text
+      MainView
   `,
   document.querySelector('#root')
 );
